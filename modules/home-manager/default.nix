@@ -2,7 +2,6 @@
     imports =
           [(import ./bitwarden)]
         ++[(import ./firefox)]
-        ++[(import ./feh)]
         ++[(import ./git)]
         ++[(import ./gnome-extension-manager)]
         ++[(import ./onlyoffice)]
