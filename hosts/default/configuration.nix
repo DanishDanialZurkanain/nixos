@@ -44,11 +44,26 @@
   };
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
+  services.xserver = {
+    enable = true;   
+    desktopManager = {
+      xterm.enable = false;
+      xfce = {
+        enable = true;
+        noDesktop = true;
+        enableXfwm = false;
+      };
+    };
+    displayManager.defaultSession = "xfce"; 
+    windowManager.i3 = {
+      enable = true;
+      package = pkgs.i3-rounded;
+    };
+  };
+  
   # Enable the Gnome Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+    services.xserver.displayManager.gdm.enable = true;
+  # services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
@@ -109,6 +124,7 @@
   # };
   
   programs.dconf.enable = true;
+  programs.zsh.enable = true;
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
