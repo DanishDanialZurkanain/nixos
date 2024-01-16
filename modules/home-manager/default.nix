@@ -5,6 +5,7 @@
         ++[(import ./git)]
         ++[(import ./gnome-extension-manager)]
         ++[(import ./gradience)]
+        ++[(import ./kitty)]
         ++[(import ./onlyoffice)]
         ++[(import ./spotify)]
         ++[(import ./ungoogled-chromium)]
