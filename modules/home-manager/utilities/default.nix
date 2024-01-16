@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
     home.packages = with pkgs; [
-      neofetch
+      nitch
 
       # Archives
       p7zip
