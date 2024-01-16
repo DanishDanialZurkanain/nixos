@@ -1,8 +1,7 @@
 {
     imports =
           [(import ./docker-compose)]
-        ++[(import ./feh)]
-        ++[(import ./libsecret)]
+        ++[(import ./gnome)]
         ++[(import ./podman)]
         ++[(import ./xterm)];
 }

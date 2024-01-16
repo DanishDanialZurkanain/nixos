@@ -11,6 +11,7 @@
 
       # Utils
       eza # A modern replacement for ‘ls’
+      vim
 
       # Networking Tools
       dnsutils  # `dig` + `nslookup`

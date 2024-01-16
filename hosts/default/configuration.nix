@@ -47,24 +47,15 @@
   services.xserver = {
     enable = true;   
     desktopManager = {
-      xterm.enable = false;
-      xfce = {
+      gnome = {
         enable = true;
-        noDesktop = true;
-        enableXfwm = false;
       };
     };
-    displayManager.defaultSession = "xfce"; 
-    windowManager.i3 = {
-      enable = true;
-      package = pkgs.i3-rounded;
-    };
+    displayManager = {
+      gdm.enable = true;
+    }; 
   };
   
-  # Enable the Gnome Environment.
-    services.xserver.displayManager.gdm.enable = true;
-  # services.xserver.desktopManager.gnome.enable = true;
-
   # Configure keymap in X11
   services.xserver = {
     layout = "us";
@@ -73,6 +64,10 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
+
+  # Password
+  # services.gnome.gnome-keyring.enable = true;
+  # security.pam.services.gdm.enableGnomeKeyring = true;
 
   # Enable sound with pipewire.
   sound.enable = true;
@@ -100,6 +95,7 @@
     description = "Danish Danial";
     extraGroups = [ "networkmanager" "wheel"  "docker" ];
     packages = with pkgs; [];
+    shell = pkgs.zsh;
   };
 
   # Allow unfree packages
