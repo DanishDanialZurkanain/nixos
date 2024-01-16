@@ -6,6 +6,7 @@
     epiphany
     geary
     gnome-contacts
+    gnome-console
     gnome-maps
     gnome-music
     gnome-software
