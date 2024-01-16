@@ -3,7 +3,10 @@
     programs.kitty = {
         enable = true;
         settings = {
-          hide_window_decorations = yes;
-        }
+          font_family = "FantasqueSansM Nerd Font Mono";
+          hide_window_decorations = true;
+          theme = "Blazer";
+          window_padding_width = 10;
+        };
     };
 }

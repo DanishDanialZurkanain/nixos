@@ -4,6 +4,7 @@
         ++[(import ./firefox)]
         ++[(import ./git)]
         ++[(import ./gnome-extension-manager)]
+        ++[(import ./gnome-tweaks)]
         ++[(import ./gradience)]
         ++[(import ./kitty)]
         ++[(import ./onlyoffice)]

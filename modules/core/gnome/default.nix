@@ -1,20 +1,20 @@
 { pkgs, ... }:
 {
-  environment.gnome.excludePackages = (with pkgs.gnome; [
-    atomix 
-    cheese
-    epiphany
-    geary
-    gnome-contacts
+  environment.gnome.excludePackages = (with pkgs; [
+    gnome.atomix 
+    gnome.cheese
+    gnome.epiphany
+    gnome.geary
+    gnome.gnome-contacts
     gnome-console
-    gnome-maps
-    gnome-music
-    gnome-software
-    hitori 
-    iagno 
-    totem 
-    tali 
-    yelp 
+    gnome.gnome-maps
+    gnome.gnome-music
+    gnome.gnome-software
+    gnome.hitori 
+    gnome.iagno 
+    gnome.totem 
+    gnome.tali 
+    gnome.yelp 
  ]);
 
 }
