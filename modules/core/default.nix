@@ -1,7 +1,7 @@
 {
     imports =
           [(import ./docker-compose)]
-        ++[(import ./gnome/application.nix)]
+        ++[(import ./gnome/applications.nix)]
         ++[(import ./podman)]
         ++[(import ./xterm)];
 }

@@ -6,34 +6,36 @@
 
 {
   imports =
-      # Include the results of the hardware scan.
-      [(import ./hardware-configuration.nix)]
-      # System modules 
-      ++[(import ../../modules/core)];
 
-  # Bootloader.
-  imports = [(import ../../systems/boot)];
+    # Include the results of the hardware scan.
+    [(import ./hardware-configuration.nix)]
+  
+    # System modules 
+    ++[(import ../../modules/core)]
 
-  # Network
-  imports = [(import ../../systems/network)];
+    # Bootloader.
+    ++[(import ../../system/boot)]
 
-  # Locale
-  imports = [(import ../../systems/locale)];
-    
-  # Desktop
-  imports = [(import ../../modules/core/gnome/desktop.nix)];
+    # Network
+    ++[(import ../../system/network)]
 
-  # Printing
-    imports = [(import ../../systems/printing)];
+    # Locale
+    ++[(import ../../system/locale)]
+      
+    # Desktop
+    ++[(import ../../modules/core/gnome/desktop.nix)]
 
-  # Sound
-  imports = [(import ../../systems/sound)];
+    # Printing
+    ++[(import ../../system/printing)]
 
-  # User
-  imports = [(import ../../systems/user)];
+    # Sound
+    ++[(import ../../system/sound)]
 
-  # Configs
-  imports = [(import ../../systems/config)];
+    # User
+    ++[(import ../../system/user)]
+
+    # Configs
+    ++[(import ../../system/config)];
 
   system.stateVersion = "23.11"; # Did you read the comment?
 }
