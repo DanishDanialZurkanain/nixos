@@ -12,28 +12,28 @@
       ++[(import ../../modules/core)];
 
   # Bootloader.
-  imports = [(import ../../systems/boot)]
+  imports = [(import ../../systems/boot)];
 
   # Network
-  imports = [(import ../../systems/network)]
+  imports = [(import ../../systems/network)];
 
   # Locale
-  imports = [(import ../../systems/locale)]
+  imports = [(import ../../systems/locale)];
     
   # Desktop
-  imports = [(import ../../modules/core/gnome/desktop.nix)]
+  imports = [(import ../../modules/core/gnome/desktop.nix)];
 
   # Printing
-    imports = [(import ../../systems/printing)]
+    imports = [(import ../../systems/printing)];
 
   # Sound
-  imports = [(import ../../systems/sound)]
+  imports = [(import ../../systems/sound)];
 
   # User
-  imports = [(import ../../systems/user)]
+  imports = [(import ../../systems/user)];
 
   # Configs
-  imports = [(import ../../systems/config)]
+  imports = [(import ../../systems/config)];
 
   system.stateVersion = "23.11"; # Did you read the comment?
 }
