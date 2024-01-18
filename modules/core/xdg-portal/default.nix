@@ -1,14 +1,8 @@
 { pkgs, ... }:
 {
   # XDG Portals
-  xdg = {
-    autostart.enable = true;
-    portal = {
+   xdg.portal = {
       enable = true;
-      extraPortals = [
-        pkgs.xdg-desktop-portal
-        pkgs.xdg-desktop-portal-gtk
-      ];
-    };
-  };
+      extraPortals = [ pkgs.xdg-desktop-portal-gtk ]; 
+   };
 }

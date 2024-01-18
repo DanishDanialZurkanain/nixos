@@ -18,6 +18,9 @@
   # Set default shell to ZSH
   programs.zsh.enable = true;
 
+    # Hyprland
+  programs.hyprland.enable = true;
+
   # Storage optimization
   nix.gc.automatic = true;
 }
