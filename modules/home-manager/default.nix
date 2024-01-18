@@ -6,6 +6,7 @@
         ++[(import ./gnome-extension-manager)]
         ++[(import ./gnome-tweaks)]
         ++[(import ./gradience)]
+        ++[(import ./hyprland)]
         ++[(import ./kitty)]
         ++[(import ./onlyoffice)]
         ++[(import ./spotify)]
