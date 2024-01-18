@@ -1,6 +1,6 @@
-{ pkgs, ... }:
+{ pkgs, services, ... }:
 {
-  package.dunst = {
+  services.dunst = {
     enable = true;
     settings = {
         global = {
@@ -18,6 +18,6 @@
           foreground = "#eceff1";
           timeout = 10;
         };
-    }
+    };
   };
 }
