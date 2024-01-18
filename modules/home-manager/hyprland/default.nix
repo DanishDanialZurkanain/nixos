@@ -128,8 +128,8 @@
     bind = $mainMod, Q, exec, $terminal
     bind = $mainMod, Backspace, killactive,
     bind = $mainMod, Space, exec, $menu
-    bind = $mainMod, F, togglefloating,
-    bind = $mainMod, M, maximize,
+    bind = $mainMod, F, togglefloating,mm
+    bind = $mainMod, M, fullscreen, 1
     bind = $mainMod, P, pseudo, # dwindle
     bind = $mainMod, J, togglesplit, # dwindle
 
