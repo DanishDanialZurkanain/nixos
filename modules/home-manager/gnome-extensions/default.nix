@@ -1,0 +1,4 @@
+{
+    imports =
+          [(import ./pop-shell)];
+}
